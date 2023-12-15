@@ -1,13 +1,13 @@
 import React from 'react'
-import Image from 'next/image'
+import HeaderMobile from '../components/headerMobile'
+import Footer from '../components/footer'
 
 
 const Home = () => {
     return (
         <div className='logo-dst'>
-        <span>
-            <Image src="/mariposo.png" width="900" height="600"/>
-        </span>
+       <HeaderMobile />
+       <Footer />
         </div>
 
 

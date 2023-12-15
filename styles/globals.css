@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: blueviolet;
+    background-color: rgb(126, 77, 102);
 }
 
 a {
@@ -21,8 +21,30 @@ a {
   align-items: center;
   justify-content: center;
 }
+.headerHome{
+  background-color: rgb(79, 52, 80);
+}
+.headerElement:hover{
+  background-color: rgb(79, 52, 80);
+  color: rgb(226, 41, 195);
+  border: 1px solid rgb(77, 13, 136);
+}
 
-@media (prefers-color-scheme: dark) {
+
+.footerContainer{
+  background-color: rgb(185, 72, 161);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.footerIcon{
+  margin:5px
+}
+@media (min-width: 900px) {
   html {
     color-scheme: dark;
   }
@@ -30,4 +52,10 @@ a {
     color: white;
     background: black;
   }
+
+  .butterFlyContainer{
+    display:flex;
+    padding:10px
+    }
+    
 }
