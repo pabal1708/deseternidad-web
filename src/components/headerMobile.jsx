@@ -9,12 +9,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Butterfly from '../assets/icons/butterfly'
+import Link from 'next/link'
 
-const pages = ['BIO', 'Integrantes', 'Lanzamientos', 'Videos', 'Fechas', 'Arte']; //debe irse y sumar links de pages
+const pages = ['bio', 'integrantes', 'lanzamientos', 'videos', 'fechas', 'arte'];
 
 const HeaderMobile = () => {
+
     const [anchorElNav, setAnchorElNav] = useState(null);
 
 
@@ -24,44 +25,24 @@ const HeaderMobile = () => {
 
     const handleMenuLink = () => {
         setAnchorElNav(null);
-        console.log("pete")
     };
 
-
-
     return (
-        <AppBar position="static">
+        
+        <AppBar position="relative">
             <Container maxWidth="xl" className="headerHome">
                 <Toolbar disableGutters>
-                    <div className="butterFlyContainer">
+                    <Link className="butterFlyContainer" href="/">
                         <Butterfly />
-                    </div>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'orbitron',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        DESETERNIDAD
-                    </Typography>
-
-                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+                    </Link>
+                    <Box sx={{ flexGrow: 2, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
                             aria-controls="menu-appbar"
                             aria-haspopup="true"
                             onClick={handleOpenNavMenu}
-                            color="pink"
+                            color="inherit"
                         >
                             <MenuIcon />
                         </IconButton>
@@ -85,7 +66,9 @@ const HeaderMobile = () => {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleMenuLink} >
+                                    <Link href={page}>
                                     <Typography className="headerElement" textAlign="center">{page}</Typography>
+                                    </Link>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -95,7 +78,7 @@ const HeaderMobile = () => {
                         variant="h5"
                         noWrap
                         component="a"
-                        href="#app-bar-with-responsive-menu"
+                        href="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -103,21 +86,23 @@ const HeaderMobile = () => {
                             fontFamily: 'orbitron',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
-                            color: 'inherit',
+                            color: 'white',
                             textDecoration: 'none',
                         }}
                     >
                         DESETERNIDAD
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', color: 'white' } }}>
                         {pages.map((page) => (
                             <Button
                                 className="headerElement"
+                                href={page}
                                 key={page}
                                 onClick={handleMenuLink}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
                             >
                                 {page}
+
                             </Button>
                         ))}
                     </Box>
@@ -126,6 +111,7 @@ const HeaderMobile = () => {
                 </Toolbar>
             </Container>
         </AppBar>
+  
     );
 }
 export default HeaderMobile;

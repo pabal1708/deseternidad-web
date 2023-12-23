@@ -1,21 +1,21 @@
 import React from 'react'
 import HeaderMobile from '../components/headerMobile'
 import Footer from '../components/footer'
-import ImgHandler from '../components/imgHanderl'
 import Layout from  '../components/layout'
+import TabPeople from '../components/tab'
 
-const Home = () => {
 
+ const People = () => {
     return (
         <div>
-        <HeaderMobile />
-        <Layout>
-            <ImgHandler />
-            </Layout>
-            <Footer />
+       <HeaderMobile />
+       <Layout>
+        <TabPeople />
+        </Layout>
+        <Footer />
         </div>
     )
+
 }
 
-
-export default Home;
+export default People

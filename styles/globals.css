@@ -1,10 +1,12 @@
 html,
 body {
+  color: white;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: rgb(126, 77, 102);
+  background-color: rgb(126, 77, 102);
 }
 
 a {
@@ -16,46 +18,186 @@ a {
   box-sizing: border-box;
 }
 
-.logo-dst{
+.logo-dst {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.headerHome{
+
+.headerHome {
   background-color: rgb(79, 52, 80);
+  display: flex;
+  justify-content: center;
 }
-.headerElement:hover{
+
+.headerElement:hover {
   background-color: rgb(79, 52, 80);
   color: rgb(226, 41, 195);
   border: 1px solid rgb(77, 13, 136);
 }
 
-
-.footerContainer{
+.footerContainer {
   background-color: rgb(185, 72, 161);
-  position: absolute;
   bottom: 0;
   display: flex;
   width: 100%;
   justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.footerIcon {
+  margin: 5px;
+}
+
+.footerIcon:hover {
+  box-shadow: 5px 10px 10px rgb(238, 24, 184);
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+.img-container-pol {
+  animation: 4s infinite alternate opacitySlow;
+}
+
+.img-container-francia {
+  position: absolute;
+  animation: 7s infinite alternate opacitySlow;
+}
+
+.img-container-yoe {
+  position: absolute;
+  animation: 10s infinite alternate ease-in-out opacitySlow;
+}
+
+.img-container-lulu {
+  position: absolute;
+  animation: 12s infinite alternate-reverse ease-in-out slidein;
+}
+.img-container-sole {
+  position: absolute;
+  animation: 15s infinite alternate ease-in-out slidein;
+}
+
+.img-container-mati {
+  position: absolute;
+  animation: 3s infinite alternate ease-in-out opacitySlow;
+}
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 85%;
+  }
+
+  to {
+    opacity: 15%;
+  }
+}
+
+@keyframes opacitySlow {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 10%;
+  }
 }
 
 
-.footerIcon{
-  margin:5px
+@keyframes opacityChar {
+  from {
+    opacity: 10%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+    transform: translatey(-1px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+  }
+}
+
+
+.layout {
+  margin: 1rem;
+}
+
+.header-container {
+  display: flex;
+}
+
+.butterFlyContainer {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.butterFlyContainer:hover{
+  transform: scale(2);
+  transition-property: all;
+
+}
+
+.char-card {
+  background: rgb(219, 119, 206);
+  margin: 1rem;
+  box-shadow: 2px 2px rgb(105, 3, 56);
+}
+.char-card-animation{
+  background: rgb(219, 119, 206);
+  margin: 1rem;
+  box-shadow: 2px 2px rgb(105, 3, 56);
+  animation: 2s  opacityChar;
+}
+
 @media (min-width: 900px) {
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background-color: rgb(126, 77, 102);
   }
 
-  .butterFlyContainer{
-    display:flex;
-    padding:10px
-    }
-    
+  .butterFlyContainer {
+    display: flex;
+    padding: 10px;
+  }
+.layout{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.bio-container {
+  margin: 0 4rem 0 4rem;
+}
+
+.char-card {
+  margin: 4rem;
+}
+.char-card-animation{
+  margin: 4rem;
+}
 }
