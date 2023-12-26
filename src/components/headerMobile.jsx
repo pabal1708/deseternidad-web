@@ -30,12 +30,12 @@ const HeaderMobile = () => {
     return (
         
         <AppBar position="relative">
-            <Container maxWidth="xl" className="headerHome">
+            <Container maxWidth="false" className="headerHome">
                 <Toolbar disableGutters>
                     <Link className="butterFlyContainer" href="/">
                         <Butterfly />
                     </Link>
-                    <Box sx={{ flexGrow: 2, display: { xs: 'flex', md: 'none' } }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
                             aria-label="account of current user"
