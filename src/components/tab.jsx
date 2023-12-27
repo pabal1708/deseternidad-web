@@ -6,10 +6,10 @@ import characters from '../peopleData/characters'
 import CardCharacters from './card'
 
 export default function TabPeople() {
-  const [value, setValue] = React.useState("Pol");
+  const [value, setValue] = React.useState("Emanuel");
   const [charValue, setCharValue] = React.useState()
 
-  const handleChange = (event, newValue) => {
+  const handleChange = (e, newValue) => {
     setValue(newValue);
     setCharValue(characters.find(e => e.name === value))
   };

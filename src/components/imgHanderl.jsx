@@ -6,7 +6,6 @@ const ImgHandler = () => {
   const imgSizes = isMobile
     ? { width: "320", height: "240" }
     : { width: "640", height: "480" };
-  console.log(imgSizes);
   return (
     <>
       <div className="image-container">
