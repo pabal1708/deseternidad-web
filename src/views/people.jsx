@@ -8,11 +8,11 @@ import TabPeople from '../components/tab'
  const People = () => {
     return (
         <div>
-       <HeaderMobile />
+
        <Layout>
         <TabPeople />
         </Layout>
-        <Footer />
+ 
         </div>
     )
 

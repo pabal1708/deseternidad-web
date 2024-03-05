@@ -7,11 +7,11 @@ import BioDetail from '../components/bioDetail'
  const Bio = () => {
   return (
     <div>
-    <HeaderMobile />
+  
     <Layout>
      <BioDetail />
      </Layout>
-     <Footer />
+
      </div>
   )
 }

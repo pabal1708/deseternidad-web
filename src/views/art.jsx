@@ -1,22 +1,15 @@
-import React from 'react'
-import HeaderMobile from '../components/headerMobile'
-import Footer from '../components/footer'
-import Layout from  '../components/layout'
-import Logo from '../components/logo'
+import React from "react";
+import Layout from "../components/layout";
+import PicGallery from "../components/picGallery";
 
 const Art = () => {
-
-    return (
-        <div>
-        <HeaderMobile />
-        <Layout>
-AQUI ENCONTRARAS MULTIMEDIA
-            <Logo />
-            </Layout>
-            <Footer />
-        </div>
-    )
-}
-
+  return (
+    <div>
+      <Layout>
+        <PicGallery />
+      </Layout>
+    </div>
+  );
+};
 
 export default Art;

@@ -14,14 +14,13 @@ export default function CardCharacters({ charValue }) {
   
  }, [charValue])
 
- console.log(animationClass)
  
   return (
     <Card sx={{ maxWidth: 345 }} className={animationClass} variant="outlined">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="250"
+          height="300"
           image={charValue?.picture}
           alt="char image"
         />

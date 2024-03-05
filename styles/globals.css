@@ -31,6 +31,11 @@ a {
   justify-content: center;
 }
 
+.imageContainer{
+  display: flex;
+  justify-content: center;
+}
+
 .headerElement:hover {
   background-color: rgb(79, 52, 80);
   color: rgb(226, 41, 195);
@@ -144,6 +149,7 @@ a {
 
 .layout {
   margin: 1rem;
+  margin-bottom: 50px;
 }
 
 .header-container {
@@ -172,6 +178,9 @@ a {
 }
 
 @media (min-width: 900px) {
+  .footerContainer {
+    position: absolute;
+  }
   html {
     color-scheme: dark;
   }
@@ -179,9 +188,7 @@ a {
     color: white;
     background-color: rgb(126, 77, 102);
   }
-.image-container {
-  width: 200%;
-}
+
 .logo-container {
   display: block;
 }
