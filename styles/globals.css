@@ -71,31 +71,37 @@ a {
   align-items: center;
 }
 .img-container-pol {
-  animation: 15s infinite alternate opacitySlow;
+  animation-delay: 11s;
+  animation: 4s infinite alternate opacitySlow;
 }
 
 .img-container-francia {
+  animation-delay: 10s;
   position: absolute;
-  animation: 13s infinite reverse opacitySlow;
+  animation: 3s infinite reverse opacitySlow;
 }
 
 .img-container-yoe {
+  animation-delay: 8s;
   position: absolute;
-  animation: 10s infinite alternate ease-in-out opacitySlow;
+  animation: 4s infinite alternate ease-in-out opacitySlow;
 }
 
 .img-container-lulu {
+  animation-delay: 7s;
+  position: absolute;
+  animation: 2s infinite alternate ease-in-out opacitySlow;
+}
+.img-container-sole {
+  animation-delay: 3s;
   position: absolute;
   animation: 6s infinite alternate ease-in-out opacitySlow;
 }
-.img-container-sole {
-  position: absolute;
-  animation: 9s infinite alternate ease-in-out opacitySlow;
-}
 
 .img-container-mati {
+  animation-delay: 4s;
   position: absolute;
-  animation: 3s infinite alternate ease-in-out opacitySlow;
+  animation: 5s infinite alternate ease-in-out opacitySlow;
 }
 .bio-container {
   display: flex;
@@ -177,10 +183,14 @@ a {
   animation: 2s opacityChar;
 }
 
+.iframe-spoty {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5%;
+}
+
 @media (min-width: 900px) {
-  .footerContainer {
-    position: absolute;
-  }
+
   html {
     color-scheme: dark;
   }
@@ -213,4 +223,12 @@ a {
   .char-card-animation {
     margin: 4rem;
   }
+
+  .iframe-spoty {
+    margin-top: 10px;
+    width: 60%;
+    border-radius: 16% 11%;
+  }
 }
+
+

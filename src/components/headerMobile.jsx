@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Butterfly from '../assets/icons/butterfly'
 import Link from 'next/link'
 
-const pages = ['bio', 'integrantes', 'lanzamientos', 'videos', 'fechas', 'arte'];
+const pages = ['bio', 'integrantes', 'lanzamientos', 'videos', 'fechas'];
 
 const HeaderMobile = () => {
 

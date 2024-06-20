@@ -17,7 +17,9 @@ const Footer = () => {
                </a>
             </div>
             <div className='footerIcon'>
+               <a href="https://open.spotify.com/intl-es/artist/6rwBpBYUFIlK4mNnOkGVLM">
                <Spotifi />
+               </a>
             </div>
     </div>
   )

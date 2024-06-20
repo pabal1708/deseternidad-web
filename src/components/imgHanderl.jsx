@@ -11,13 +11,13 @@ const ImgHandler = () => {
       <div className="image-container">
         <Image
           className="img-container-mati"
-          src="/mati.png"
+          src="/nico.png"
           width={imgSizes.width}
           height={imgSizes.height}
         />
         <Image
           className="img-container-sole"
-          src="/sole.png"
+          src="/pau.png"
           width={imgSizes.width}
           height={imgSizes.height}
         />
