@@ -1,18 +1,21 @@
-import React from 'react'
-import Image from 'next/image'
-
+import React from "react";
+import HeaderMobile from "../components/headerMobile";
+import Footer from "../components/footer";
+import ImgHandler from "../components/imgHanderl";
+import Layout from "../components/layout";
+import Logo from "../components/logo";
+import FuturisticButterflyAnimation from "../components/mariposeAnime";
 
 const Home = () => {
-    return (
-        <div className='logo-dst'>
-        <span>
-            <Image src="/mariposo.png" width="900" height="600"/>
-        </span>
-        </div>
-
-
-    )
-}
-
+  return (
+    <>
+      <Layout>
+        {/* <ImgHandler /> */}
+        <FuturisticButterflyAnimation />
+      </Layout>
+      
+    </>
+  );
+};
 
 export default Home;

@@ -1,10 +1,12 @@
 html,
 body {
+  color: white;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: blueviolet;
+  background-color: rgb(126, 77, 102);
 }
 
 a {
@@ -16,18 +18,217 @@ a {
   box-sizing: border-box;
 }
 
-.logo-dst{
+.logo-dst {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-@media (prefers-color-scheme: dark) {
+.headerHome {
+  background-color: rgb(79, 52, 80);
+  display: flex;
+  justify-content: center;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.headerElement:hover {
+  background-color: rgb(79, 52, 80);
+  color: rgb(226, 41, 195);
+  border: 1px solid rgb(77, 13, 136);
+}
+
+.footerContainer {
+  background-color: rgb(185, 72, 161);
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.footerIcon {
+  margin: 5px;
+}
+.logo-container {
+  display: none;
+}
+
+.footerIcon:hover {
+  box-shadow: 5px 10px 10px rgb(238, 24, 184);
+  border-radius: 5px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  align-items: center;
+}
+.img-container-pol {
+  animation-delay: 11s;
+  animation: 4s infinite alternate opacitySlow;
+}
+
+.img-container-francia {
+  animation-delay: 10s;
+  position: absolute;
+  animation: 3s infinite reverse opacitySlow;
+}
+
+.img-container-yoe {
+  animation-delay: 8s;
+  position: absolute;
+  animation: 4s infinite alternate ease-in-out opacitySlow;
+}
+
+.img-container-lulu {
+  animation-delay: 7s;
+  position: absolute;
+  animation: 2s infinite alternate ease-in-out opacitySlow;
+}
+.img-container-sole {
+  animation-delay: 3s;
+  position: absolute;
+  animation: 6s infinite alternate ease-in-out opacitySlow;
+}
+
+.img-container-mati {
+  animation-delay: 4s;
+  position: absolute;
+  animation: 5s infinite alternate ease-in-out opacitySlow;
+}
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 90%;
+  }
+  to {
+    opacity: 10%;
+  }
+}
+
+@keyframes opacitySlow {
+  from {
+    opacity: 85%;
+  }
+
+  to {
+    opacity: 10%;
+  }
+}
+
+@keyframes opacityChar {
+  from {
+    opacity: 10%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-1px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+.layout {
+  margin: 1rem;
+  margin-bottom: 50px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.butterFlyContainer {
+  margin-left: 8px;
+  cursor: pointer;
+}
+.butterFlyContainer:hover {
+  transform: scale(2);
+  transition-property: all;
+}
+
+.char-card {
+  background: rgb(219, 119, 206);
+  margin: 1rem;
+  box-shadow: 2px 2px rgb(105, 3, 56);
+}
+.char-card-animation {
+  background: rgb(219, 119, 206);
+  margin: 1rem;
+  box-shadow: 2px 2px rgb(105, 3, 56);
+  animation: 2s opacityChar;
+}
+
+.iframe-spoty {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5%;
+}
+
+@media (min-width: 900px) {
+
   html {
     color-scheme: dark;
   }
   body {
     color: white;
-    background: black;
+    background-color: rgb(126, 77, 102);
+  }
+
+.logo-container {
+  display: block;
+}
+  .butterFlyContainer {
+    display: flex;
+    padding: 10px;
+  }
+  .layout {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .bio-container {
+    margin: 0 4rem 0 4rem;
+  }
+
+  .char-card {
+    margin: 4rem;
+  }
+  .char-card-animation {
+    margin: 4rem;
+  }
+
+  .iframe-spoty {
+    margin-top: 10px;
+    width: 60%;
+    border-radius: 16% 11%;
   }
 }
+
+
