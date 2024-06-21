@@ -6,7 +6,7 @@ import characters from '../peopleData/characters'
 import CardCharacters from './card'
 
 export default function TabPeople() {
-  const [value, setValue] = React.useState("Emanuel");
+  const [value, setValue] = React.useState("Ema");
   const [charValue, setCharValue] = React.useState()
 
   const handleChange = (e, newValue) => {

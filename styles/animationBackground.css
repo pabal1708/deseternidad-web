@@ -1,0 +1,18 @@
+body {
+    background-color: #8b4c8d; /* Color de fondo */
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 70%);
+    background-size: cover; /* Tamaño de la imagen de fondo */
+    background-position: center; /* Posición centrada */
+    overflow: hidden; /* Ocultar desbordamiento */
+    animation: blurAnimation 5s linear infinite alternate; /* Animación de difuminación */
+  }
+  
+  @keyframes blurAnimation {
+    0% {
+      opacity: 1; /* Opacidad completa al inicio */
+    }
+    100% {
+      opacity: 0.6; /* Opacidad reducida al final */
+    }
+  }
+  
