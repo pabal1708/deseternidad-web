@@ -12,7 +12,7 @@ const FuturisticButterflyAnimation = () => {
     <div className="image-container">
            <Image
           className="butterfly-image"
-          src="/Mariposa.png"
+          src="/marisopa.png"
           width={imgSizes.width}
           height={imgSizes.height}
           />

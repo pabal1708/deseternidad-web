@@ -5,21 +5,36 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
-import lives from '../peopleData/lives'
 
-export default function FolderList() {
+
+const DataList = ({ data }) => {
+
+  const handleLocationClick = (ubicacion) => {
+    // Abrir la ubicación en Google Maps al hacer clic
+    window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(ubicacion)}`, '_blank');
+  };
+
   return (
-    <List sx={{ width: '100%', maxWidth: 360, }}>
-        {lives.map(({ name, date, zone })=>(
-      <ListItem key={name}>
-        <ListItemAvatar>
-          <Avatar>
-            <MusicNoteIcon />
-          </Avatar>
-        </ListItemAvatar>
-        <ListItemText primary={name} secondary={date} />
-      </ListItem>
-      ))}
-    </List>
+    <div>
+      <h2>Fechas En Vivo</h2>
+      <ol className="data-list">
+        {data.map((item, index) => (
+          <li key={index}>
+          <div>            <strong>Fecha y Hora: </strong> {item.fechaHora}<br />
+            <strong>Nombre del Lugar: </strong> {item.nombreLugar}<br />
+            <strong>Ubicación: </strong> 
+            <span className="location-link" onClick={() => handleLocationClick(item.ubicacion)}>
+              Ver en Google Maps <i className="fas fa-map-marker-alt"></i>
+            </span><br />
+            <span className="music-icon">
+              <i className="fas fa-music"></i> 
+            </span>
+            </div>
+          </li>
+        ))}
+      </ol>
+    </div>
   );
 }
+
+export default DataList;
