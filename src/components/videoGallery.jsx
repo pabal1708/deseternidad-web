@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Image from "next/image";
 
+
 const Gallery = () => {
     const [elevation, setElevation] = React.useState(0)
 
