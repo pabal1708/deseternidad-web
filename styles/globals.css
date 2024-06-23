@@ -107,6 +107,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px 10px 50px 10px;
 }
 
 @keyframes slidein {
@@ -222,6 +223,7 @@ a {
   }
   .char-card-animation {
     margin: 4rem;
+    
   }
 
   .iframe-spoty {
@@ -271,4 +273,12 @@ h2{
   margin: 10px;
   text-align: center;
   text-shadow: 1px 1px 2px black;
+}
+
+.css-w0pj6 {
+color: white;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+  color: white;
 }

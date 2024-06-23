@@ -5,6 +5,7 @@ import Tab from '@mui/material/Tab';
 import characters from '../peopleData/characters'
 import CardCharacters from './card'
 
+
 export default function TabPeople() {
   const [value, setValue] = React.useState("Ema");
   const [charValue, setCharValue] = React.useState()
