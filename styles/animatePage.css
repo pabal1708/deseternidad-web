@@ -1,0 +1,13 @@
+.layout {
+    opacity: 0; /* Comienza con opacidad 0 para que la página sea inicialmente invisible */
+    animation: fadeIn 1s ease forwards; /* Animación de 1 segundo con función de timing ease */
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Comienza con opacidad 0 al inicio de la animación */
+    }
+    100% {
+      opacity: 1; /* Termina con opacidad 1 al final de la animación */
+    }
+  }

@@ -249,6 +249,9 @@ a {
   list-style-type: none; /* Quitar los puntos de la lista */
   padding-left: 0px; /* Eliminar el padding izquierdo */
   text-shadow: 1px 1px 1px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .location-link {
