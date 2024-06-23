@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import {  CardActionArea } from '@mui/material';
+import { isMobile } from "react-device-detect";
 
 export default function CardCharacters({ charValue }) {
  const [animationClass, setAnimationClass]= useState("char-card");
@@ -14,13 +15,16 @@ export default function CardCharacters({ charValue }) {
   
  }, [charValue])
 
- 
+ const imgSizes = isMobile
+ ? 250
+ : 400;
+
   return (
     <Card sx={{ maxWidth: 345 }} className={animationClass} variant="outlined">
       <CardActionArea>
         <CardMedia
           component="img"
-          height="300"
+          height={imgSizes}
           image={charValue?.picture}
           alt="char image"
         />

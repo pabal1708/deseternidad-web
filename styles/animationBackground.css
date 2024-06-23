@@ -1,18 +1,29 @@
 body {
-    background-color: #8b4c8d; /* Color de fondo */
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.8), transparent 70%);
-    background-size: cover; /* Tamaño de la imagen de fondo */
-    background-position: center; /* Posición centrada */
-    overflow: hidden; /* Ocultar desbordamiento */
-    animation: blurAnimation 5s linear infinite alternate; /* Animación de difuminación */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg, #ff00ccb2, #72206b, #ca4e88);
+    background-size: 600% 600%;
+    animation: gradientBG 7s ease infinite;
   }
-  
-  @keyframes blurAnimation {
+
+  .char-card-animation {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    background-image: linear-gradient(45deg, #d394c6b2, #864581);
+    background-size: 600% 600%;
+    animation: gradientBG 7s ease infinite;
+  }
+
+  @keyframes gradientBG {
     0% {
-      opacity: 1; /* Opacidad completa al inicio */
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
     }
     100% {
-      opacity: 0.6; /* Opacidad reducida al final */
+      background-position: 0% 50%;
     }
   }
-  
